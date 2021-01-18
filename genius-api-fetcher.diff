@@ -4,8 +4,6 @@ Date: Mon, 18 Jan 2021 08:23:59 +0600
 Subject: [PATCH] Genius lyrics fetching
 
 We use genius api for getting song url and then parse it.
-Sometimes it returns different HTML, and I don't really now why, so
-that's why we have two regexes.
 So it introduces genius_api_token config parameter, that should be
 populated if you want to use genius.
 Maybe it would be better to just introduce new lyrics fetcher
